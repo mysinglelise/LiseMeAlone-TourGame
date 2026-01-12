@@ -1,0 +1,50 @@
+[gd_scene load_steps=7 format=3 uid="uid://cgwdrnawt6ojt"]
+
+[ext_resource type="Texture2D" uid="uid://b17kwcl3365ou" path="res://assets/maps/diablo sprite.png" id="1_m8n7g"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2vqkv"]
+atlas = ExtResource("1_m8n7g")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d686h"]
+atlas = ExtResource("1_m8n7g")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m8n7g"]
+atlas = ExtResource("1_m8n7g")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pwxiu"]
+atlas = ExtResource("1_m8n7g")
+region = Rect2(64, 64, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_egex0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2vqkv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d686h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m8n7g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pwxiu")
+}],
+"loop": true,
+"name": &"default",
+"speed": 1.0
+}]
+
+[node name="diablo" type="Node2D"]
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(2, -2)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Area2D"]
+position = Vector2(10, 0)
+sprite_frames = SubResource("SpriteFrames_egex0")
+autoplay = "default"
+frame_progress = 0.5850833

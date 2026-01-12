@@ -1,0 +1,111 @@
+[gd_scene load_steps=16 format=3 uid="uid://dh2pjccoynpfb"]
+
+[ext_resource type="Texture2D" uid="uid://dkkgf8j6t0hbm" path="res://assets/maps/bad bunny sprite.png" id="1_6e84v"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4dvvg"]
+atlas = ExtResource("1_6e84v")
+region = Rect2(0, 0, 316, 237)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rnjyy"]
+atlas = ExtResource("1_6e84v")
+region = Rect2(316, 0, 316, 237)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4vge2"]
+atlas = ExtResource("1_6e84v")
+region = Rect2(632, 0, 316, 237)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_04qyp"]
+atlas = ExtResource("1_6e84v")
+region = Rect2(0, 237, 316, 237)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j7wrs"]
+atlas = ExtResource("1_6e84v")
+region = Rect2(316, 237, 316, 237)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fws66"]
+atlas = ExtResource("1_6e84v")
+region = Rect2(632, 237, 316, 237)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hh0fu"]
+atlas = ExtResource("1_6e84v")
+region = Rect2(0, 711, 316, 237)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3m5ht"]
+atlas = ExtResource("1_6e84v")
+region = Rect2(316, 711, 316, 237)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dubn7"]
+atlas = ExtResource("1_6e84v")
+region = Rect2(632, 711, 316, 237)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_08kqv"]
+atlas = ExtResource("1_6e84v")
+region = Rect2(0, 948, 316, 237)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f6ptj"]
+atlas = ExtResource("1_6e84v")
+region = Rect2(316, 948, 316, 237)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hsdmi"]
+atlas = ExtResource("1_6e84v")
+region = Rect2(632, 948, 316, 237)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ifa78"]
+atlas = ExtResource("1_6e84v")
+region = Rect2(0, 1185, 316, 237)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xtx0q"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4dvvg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rnjyy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4vge2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_04qyp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j7wrs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fws66")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hh0fu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3m5ht")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dubn7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_08kqv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f6ptj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hsdmi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ifa78")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Bad Bunny" type="Node2D"]
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Area2D"]
+sprite_frames = SubResource("SpriteFrames_xtx0q")
+autoplay = "default"
+frame_progress = 0.83071065

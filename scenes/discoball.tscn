@@ -1,0 +1,66 @@
+[gd_scene load_steps=10 format=3 uid="uid://bjb0yrgwi48g7"]
+
+[ext_resource type="Texture2D" uid="uid://bykvux8edqui" path="res://assets/the moon game /disco ball.png" id="1_lq65g"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5l7ir"]
+atlas = ExtResource("1_lq65g")
+region = Rect2(0, 0, 480, 480)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_csi35"]
+atlas = ExtResource("1_lq65g")
+region = Rect2(480, 0, 480, 480)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_86hrp"]
+atlas = ExtResource("1_lq65g")
+region = Rect2(0, 480, 480, 480)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dh3id"]
+atlas = ExtResource("1_lq65g")
+region = Rect2(480, 480, 480, 480)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7pqgk"]
+atlas = ExtResource("1_lq65g")
+region = Rect2(0, 960, 480, 480)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_haa3q"]
+atlas = ExtResource("1_lq65g")
+region = Rect2(480, 960, 480, 480)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_stcli"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5l7ir")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_csi35")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_86hrp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dh3id")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7pqgk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_haa3q")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ep64k"]
+radius = 27.658634
+
+[node name="discoball" type="Area2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_stcli")
+autoplay = "default"
+frame_progress = 0.80806553
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_ep64k")

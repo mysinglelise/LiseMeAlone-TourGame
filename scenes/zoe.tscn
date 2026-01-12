@@ -1,0 +1,77 @@
+[gd_scene load_steps=11 format=3 uid="uid://dmlltxfkctwdv"]
+
+[ext_resource type="Texture2D" uid="uid://dcpgc7u7bi6x3" path="res://assets/maps/ZOE SPRITE.png" id="1_5c6kx"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dejsr"]
+atlas = ExtResource("1_5c6kx")
+region = Rect2(0, 0, 133, 120)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_shcuo"]
+atlas = ExtResource("1_5c6kx")
+region = Rect2(133, 0, 133, 120)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nny58"]
+atlas = ExtResource("1_5c6kx")
+region = Rect2(266, 0, 133, 120)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ls4bl"]
+atlas = ExtResource("1_5c6kx")
+region = Rect2(0, 120, 133, 120)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8kyvu"]
+atlas = ExtResource("1_5c6kx")
+region = Rect2(133, 120, 133, 120)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1icoo"]
+atlas = ExtResource("1_5c6kx")
+region = Rect2(266, 120, 133, 120)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gldyo"]
+atlas = ExtResource("1_5c6kx")
+region = Rect2(0, 240, 133, 120)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b5t4y"]
+atlas = ExtResource("1_5c6kx")
+region = Rect2(133, 240, 133, 120)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hsol0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dejsr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_shcuo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nny58")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ls4bl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8kyvu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1icoo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gldyo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b5t4y")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="ZOE" type="Node2D"]
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Area2D"]
+scale = Vector2(1.2039082, 1.0920218)
+sprite_frames = SubResource("SpriteFrames_hsol0")
+autoplay = "default"
+frame_progress = 0.18632908
